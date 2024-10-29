@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+	<name>
+		TBank банк
+	</name>
+	<settings>
+		<variable>tbank_terminal</variable>
+		<name>Терминал (выдается банком)</name>
+	</settings>
+	<settings>
+		<variable>tbank_secret</variable>
+		<name>Секретный ключ (выдается банком)</name>
+	</settings>
+	<settings>
+		<variable>tbank_email_company</variable>
+		<name>Email комании</name>
+	</settings>
+	<settings>
+		<variable>tbank_send_check</variable>
+		<name>Передавать данные для формирования чека</name>
+		<options>
+			<name>Вкл</name>
+			<value>1</value>
+		</options>
+		<options>
+			<name>Выкл</name>
+			<value>0</value>
+		</options>
+	</settings>
+	<settings>
+		<variable>tbank_taxation</variable>
+		<name>Система налогообложения</name>
+		<options>
+			<name>Общая СН</name>
+			<value>osn</value>
+		</options>
+		<options>
+			<name>Упрощенная СН (доходы)</name>
+			<value>usn_income</value>
+		</options>
+		<options>
+			<name>Упрощенная СН (доходы минус расходы)</name>
+			<value>usn_income_outcome</value>
+		</options>
+		<options>
+			<name>Единый налог на вмененный доход</name>
+			<value>envd</value>
+		</options>
+		<options>
+			<name>Единый сельскохозяйственный налог</name>
+			<value>esn</value>
+		</options>
+		<options>
+			<name>Патентная СН</name>
+			<value>patent</value>
+		</options>
+	</settings>
+	<settings>
+		<variable>tbank_product_tax</variable>
+		<name>Ставка налога для товара</name>
+		<options>
+			<name>Без НДС</name>
+			<value>none</value>
+		</options>
+		<options>
+			<name>НДС по ставке 0%</name>
+			<value>vat0</value>
+		</options>
+		<options>
+			<name>НДС чека по ставке 10%</name>
+			<value>vat10</value>
+		</options>
+		<options>
+			<name>НДС чека по ставке 18%</name>
+			<value>vat18</value>
+		</options>
+		<options>
+			<name>НДС чека по ставке 20%</name>
+			<value>vat20</value>
+		</options>
+	</settings>
+	<settings>
+		<variable>tbank_delivery_tax</variable>
+		<name>Ставка налога для доставки</name>
+		<options>
+			<name>Без НДС</name>
+			<value>none</value>
+		</options>
+		<options>
+			<name>НДС по ставке 0%</name>
+			<value>vat0</value>
+		</options>
+		<options>
+			<name>НДС чека по ставке 10%</name>
+			<value>vat10</value>
+		</options>
+		<options>
+			<name>НДС чека по ставке 18%</name>
+			<value>vat18</value>
+		</options>
+		<options>
+			<name>НДС чека по ставке 20%</name>
+			<value>vat20</value>
+		</options>
+	</settings>
+	<settings>
+		<variable>tbank_payment_method</variable>
+		<name>Признак способа расчёта</name>
+		<options>
+			<name>Предоплата 100%</name>
+			<value>full_prepayment</value>
+		</options>
+		<options>
+			<name>Предоплата</name>
+			<value>prepayment</value>
+		</options>
+		<options>
+			<name>Аванс</name>
+			<value>advance</value>
+		</options>
+		<options>
+			<name>Полный расчет</name>
+			<value>full_payment</value>
+		</options>
+		<options>
+			<name>Частичный расчет и кредит</name>
+			<value>partial_payment</value>
+		</options>
+		<options>
+			<name>Передача в кредит</name>
+			<value>credit</value>
+		</options>
+		<options>
+			<name>Оплата кредита</name>
+			<value>credit_payment</value>
+		</options>
+	</settings>
+	<settings>
+		<variable>tbank_payment_object</variable>
+		<name>Признак предмета расчёта</name>
+		<options>
+			<name>Товар</name>
+			<value>commodity</value>
+		</options>
+		<options>
+			<name>Подакцизный товар</name>
+			<value>excise</value>
+		</options>
+		<options>
+			<name>Работа</name>
+			<value>job</value>
+		</options>
+		<options>
+			<name>Услуга</name>
+			<value>service</value>
+		</options>
+		<options>
+			<name>Ставка азартной игры</name>
+			<value>gambling_bet</value>
+		</options>
+		<options>
+			<name>Выигрыш азартной игры</name>
+			<value>gambling_prize</value>
+		</options>
+		<options>
+			<name>Лотерейный билет</name>
+			<value>lottery</value>
+		</options>
+		<options>
+			<name>Лотерейный билет</name>
+			<value>lottery</value>
+		</options>
+		<options>
+			<name>Выигрыш лотереи</name>
+			<value>lottery_prize</value>
+		</options>
+		<options>
+			<name>Предоставление результатов интеллектуальной деятельности</name>
+			<value>intellectual_activity</value>
+		</options>
+		<options>
+			<name>Платеж</name>
+			<value>payment</value>
+		</options>
+		<options>
+			<name>Агентское вознаграждение</name>
+			<value>agent_commission</value>
+		</options>
+		<options>
+			<name>Составной предмет расчета</name>
+			<value>composite</value>
+		</options>
+		<options>
+			<name>Иной предмет расчета</name>
+			<value>another</value>
+		</options>
+	</settings>
+	<settings>
+		<variable>tbank_language</variable>
+		<name>Язык платежной формы</name>
+		<options>
+			<name>Русский</name>
+			<value>ru</value>
+		</options>
+		<options>
+			<name>Английский</name>
+			<value>en</value>
+		</options>
+	</settings>
+</module>
